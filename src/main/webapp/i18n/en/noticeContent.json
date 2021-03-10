@@ -1,0 +1,24 @@
+{
+  "enbApp": {
+    "noticeContent": {
+      "home": {
+        "title": "Notice Contents",
+        "createLabel": "Create a new Notice Content",
+        "createOrEditLabel": "Create or edit a Notice Content",
+        "notFound": "No Notice Contents found"
+      },
+      "created": "A new Notice Content is created with identifier {{ param }}",
+      "updated": "A Notice Content is updated with identifier {{ param }}",
+      "deleted": "A Notice Content is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Notice Content {{ id }}?"
+      },
+      "detail": {
+        "title": "Notice Content"
+      },
+      "ncType": "Nc Type",
+      "url": "Url",
+      "notice": "Notice"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "NoticeContent",
+  "fields": [
+    {
+      "fieldName": "ncType",
+      "fieldType": "NCType",
+      "fieldValues": "IMAGE,VIDEO",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "notice",
+      "otherEntityRelationshipName": "contents",
+      "relationshipName": "notice",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210310175745",
+  "javadoc": "url is the path for nc",
+  "entityTableName": "notice_content",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,9 @@
+{
+  "enbApp": {
+    "NCType": {
+      "null": "",
+      "IMAGE": "IMAGE",
+      "VIDEO": "VIDEO"
+    }
+  }
+}

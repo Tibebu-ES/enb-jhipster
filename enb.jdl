@@ -1,0 +1,30 @@
+
+
+enum NCType {
+	IMAGE,
+    VIDEO
+}
+entity Notice {
+	title String required,
+    message TextBlob required,
+    openTime LocalDate required,
+    closingTime LocalDate required
+}
+
+/**
+ * url is the path for nc 
+ */
+entity NoticeContent {
+	ncType NCType required,
+    url String
+}
+
+relationship OneToMany {
+  Notice{contents} to NoticeContent{notice}
+ 
+}
+
+relationship ManyToOne {
+	 Notice{editor} to User
+}
+ 
